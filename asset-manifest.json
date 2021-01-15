@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/marlon-portfolio/static/css/main.9edff8f3.chunk.css",
+    "main.js": "/marlon-portfolio/static/js/main.40df3238.chunk.js",
+    "main.js.map": "/marlon-portfolio/static/js/main.40df3238.chunk.js.map",
+    "runtime-main.js": "/marlon-portfolio/static/js/runtime-main.fbd0a305.js",
+    "runtime-main.js.map": "/marlon-portfolio/static/js/runtime-main.fbd0a305.js.map",
+    "static/js/2.11af7122.chunk.js": "/marlon-portfolio/static/js/2.11af7122.chunk.js",
+    "static/js/2.11af7122.chunk.js.map": "/marlon-portfolio/static/js/2.11af7122.chunk.js.map",
+    "index.html": "/marlon-portfolio/index.html",
+    "static/css/main.9edff8f3.chunk.css.map": "/marlon-portfolio/static/css/main.9edff8f3.chunk.css.map",
+    "static/js/2.11af7122.chunk.js.LICENSE.txt": "/marlon-portfolio/static/js/2.11af7122.chunk.js.LICENSE.txt",
+    "static/media/Background-3-last.7e4c40b5.png": "/marlon-portfolio/static/media/Background-3-last.7e4c40b5.png",
+    "static/media/Background-4.234578c5.png": "/marlon-portfolio/static/media/Background-4.234578c5.png",
+    "static/media/bg1-ofc-empty-LQ.59957b23.png": "/marlon-portfolio/static/media/bg1-ofc-empty-LQ.59957b23.png",
+    "static/media/bg3.b2cd16ec.png": "/marlon-portfolio/static/media/bg3.b2cd16ec.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fbd0a305.js",
+    "static/js/2.11af7122.chunk.js",
+    "static/css/main.9edff8f3.chunk.css",
+    "static/js/main.40df3238.chunk.js"
+  ]
+}
