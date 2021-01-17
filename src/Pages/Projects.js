@@ -1,17 +1,22 @@
-import React from 'react'
-import zoomOut from 'react-animations/lib/zoom-out';
+import React, {useState} from 'react'
 import { HeroBg, HeroBgImage, HeroContainer } from '../Components/HeroSectionElements'
 import { ProjectsBoxContainer, ProjectsBoxDescription, ProjectsBoxGitIcon,
      ProjectsBoxGitIconContainer, ProjectsBoxIcon1, ProjectsBoxIcon2,
       ProjectsBoxIcon3, ProjectsBoxIconsContainer, ProjectsBoxText,
        ProjectsBoxTextContainer, ProjectsButton, ProjectsButtonContainer,
         ProjectsContainer, ProjectsIcon, ProjectsIconContainer, ProjectsMiniTitle,
-         ProjectsModal1, ProjectsModalsContainer, ProjectsTitle }
+         ProjectsModal1, ProjectsModalsContainer, ProjectsTitle, ProjectsModal2,
+          ProjectsModal3 }
           from '../Components/ProjectsElements';
 import bg3 from '../images/Background-3-last.png';
 
 
 function Projects() {
+    const [showModal, setShowModal]=useState(false);
+    const openModal = ()=>{
+        setShowModal(prev=>!prev)
+    }
+
     return (
             <>
             <HeroContainer id="Projects" smooth={true} duration={500} spy={true}
@@ -34,7 +39,7 @@ function Projects() {
                         
                     <ProjectsModalsContainer>
 
-                        <ProjectsModal1>
+                        <ProjectsModal2>
                             <ProjectsIconContainer>
                                 <ProjectsIcon></ProjectsIcon>
                             </ProjectsIconContainer>
@@ -58,8 +63,8 @@ function Projects() {
                                 </ProjectsBoxGitIconContainer>
                                 
                             </ProjectsBoxContainer>
-                        </ProjectsModal1>
-                        <ProjectsModal1>
+                        </ProjectsModal2>
+                        <ProjectsModal3>
                             <ProjectsIconContainer>
                                 <ProjectsIcon></ProjectsIcon>
                             </ProjectsIconContainer>
@@ -83,7 +88,7 @@ function Projects() {
                                 </ProjectsBoxGitIconContainer>
                                 
                             </ProjectsBoxContainer>
-                        </ProjectsModal1>
+                        </ProjectsModal3>
                         <ProjectsModal1>
                             <ProjectsIconContainer>
                                 <ProjectsIcon></ProjectsIcon>
@@ -95,7 +100,7 @@ function Projects() {
                                     <ProjectsBoxIcon3/>
                                 </ProjectsBoxIconsContainer>
                                 <ProjectsBoxTextContainer>
-                                <ProjectsBoxText>Dognate</ProjectsBoxText>
+                                <ProjectsBoxText>Affiliate</ProjectsBoxText>
                                 <ProjectsBoxDescription >
                                     An app that 
                                     users can find dogs 

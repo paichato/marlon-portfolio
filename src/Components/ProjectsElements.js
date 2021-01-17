@@ -66,6 +66,46 @@ transition: all 0.2s ease-in-out;
 
 `
 
+export const ProjectsModal2=styled.div`
+padding:10px;
+cursor: pointer;
+transition: all 0.2s ease-in-out; 
+
+&:hover{
+    transform: scale(1.1,1.1)
+}
+
+@media screen and (max-width: 580px){
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    height:130px;
+    
+}
+
+`
+
+export const ProjectsModal3=styled.div`
+padding:10px;
+cursor: pointer;
+transition: all 0.2s ease-in-out; 
+
+&:hover{
+    transform: scale(1.1,1.1)
+}
+
+@media screen and (max-width: 580px){
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    height:130px;
+    
+}
+
+`
+
 export const ProjectsIconContainer=styled.div`
 z-index: 5;
 border-radius:160px;

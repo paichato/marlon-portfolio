@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { Button, Button2, CodeIcon, CodeIconContainer, MiniText, Text } from '../Components/ButtonElement';
 import { HeroBtnContainer, ArrowForward, ArrowRight } from '../Components/HeroSectionElements';
 import HeroSection from '../HeroSection';
-import { NavC } from '../NavC';
+
 import {Sidebar} from '../Sidebar';
 
 
@@ -22,7 +22,7 @@ function Home() {
     
     return (
         <div >
-            {/* <NavC  toggle={toggle}/> */}
+           
             <Sidebar isOpen={isOpen} toggle={toggle} />
             
             <Button to='About' onMouseEnter={onHover} onMouseLeave={onHover} 
