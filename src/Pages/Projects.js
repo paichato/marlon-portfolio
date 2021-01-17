@@ -6,8 +6,10 @@ import { ProjectsBoxContainer, ProjectsBoxDescription, ProjectsBoxGitIcon,
        ProjectsBoxTextContainer, ProjectsButton, ProjectsButtonContainer,
         ProjectsContainer, ProjectsIcon, ProjectsIconContainer, ProjectsMiniTitle,
          ProjectsModal1, ProjectsModalsContainer, ProjectsTitle, ProjectsModal2,
-          ProjectsModal3 }
+          ProjectsModal3  }
+
           from '../Components/ProjectsElements';
+import {BigModal} from '../Components/BigModalElements.js';
 import bg3 from '../images/Background-3-last.png';
 
 
@@ -36,9 +38,35 @@ function Projects() {
                          spy={true} exact="true" offset={-80} >Hire now</ProjectsButton>
                         </ProjectsButtonContainer>
                         
-                        
+                        <BigModal showModal={showModal} setShowModal={setShowModal}></BigModal>
                     <ProjectsModalsContainer>
 
+                        <ProjectsModal1 onClick={openModal}>
+
+                            <ProjectsIconContainer>
+                                <ProjectsIcon></ProjectsIcon>
+                            </ProjectsIconContainer>
+                            <ProjectsBoxContainer>
+                                <ProjectsBoxIconsContainer>
+                                    <ProjectsBoxIcon1/>
+                                    <ProjectsBoxIcon2/>
+                                    <ProjectsBoxIcon3/>
+                                </ProjectsBoxIconsContainer>
+                                <ProjectsBoxTextContainer>
+                                <ProjectsBoxText>Dognate</ProjectsBoxText>
+                                <ProjectsBoxDescription>
+                                    An app that 
+                                    users can find dogs 
+                                    to adopt and give to 
+                                    adoption.
+                                    </ProjectsBoxDescription>
+                                </ProjectsBoxTextContainer>
+                                <ProjectsBoxGitIconContainer>
+                                    <ProjectsBoxGitIcon></ProjectsBoxGitIcon>
+                                </ProjectsBoxGitIconContainer>
+                                
+                            </ProjectsBoxContainer>
+                        </ProjectsModal1>
                         <ProjectsModal2>
                             <ProjectsIconContainer>
                                 <ProjectsIcon></ProjectsIcon>
@@ -75,31 +103,6 @@ function Projects() {
                                     <ProjectsBoxIcon3/>
                                 </ProjectsBoxIconsContainer>
                                 <ProjectsBoxTextContainer>
-                                <ProjectsBoxText>Dognate</ProjectsBoxText>
-                                <ProjectsBoxDescription>
-                                    An app that 
-                                    users can find dogs 
-                                    to adopt and give to 
-                                    adoption.
-                                    </ProjectsBoxDescription>
-                                </ProjectsBoxTextContainer>
-                                <ProjectsBoxGitIconContainer>
-                                    <ProjectsBoxGitIcon></ProjectsBoxGitIcon>
-                                </ProjectsBoxGitIconContainer>
-                                
-                            </ProjectsBoxContainer>
-                        </ProjectsModal3>
-                        <ProjectsModal1>
-                            <ProjectsIconContainer>
-                                <ProjectsIcon></ProjectsIcon>
-                            </ProjectsIconContainer>
-                            <ProjectsBoxContainer>
-                                <ProjectsBoxIconsContainer>
-                                    <ProjectsBoxIcon1/>
-                                    <ProjectsBoxIcon2/>
-                                    <ProjectsBoxIcon3/>
-                                </ProjectsBoxIconsContainer>
-                                <ProjectsBoxTextContainer>
                                 <ProjectsBoxText>Affiliate</ProjectsBoxText>
                                 <ProjectsBoxDescription >
                                     An app that 
@@ -113,7 +116,7 @@ function Projects() {
                                 </ProjectsBoxGitIconContainer>
                                 
                             </ProjectsBoxContainer>
-                        </ProjectsModal1>
+                        </ProjectsModal3>
 
                     </ProjectsModalsContainer>
 
