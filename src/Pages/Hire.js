@@ -29,7 +29,7 @@ function Hire() {
                             <HireCard1CLabel>Download, follow, add</HireCard1CLabel>
                             <HireCard1IconContainer>
                                 <HireIcon1/>
-                                <HireIcon2/>
+                                <HireIcon2 to="https://www.linkedin.com/in/marlon-d-jesus-6874271ab/" href="https://www.linkedin.com/in/marlon-d-jesus-6874271ab/"/>
                                 <HireIcon3/>
                             </HireCard1IconContainer>
                         </HireCard1C>

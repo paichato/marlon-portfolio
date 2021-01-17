@@ -67,7 +67,7 @@ function Projects() {
                                 
                             </ProjectsBoxContainer>
                         </ProjectsModal1>
-                        <ProjectsModal2>
+                        <ProjectsModal2 onClick={openModal}>
                             <ProjectsIconContainer>
                                 <ProjectsIcon></ProjectsIcon>
                             </ProjectsIconContainer>
@@ -92,7 +92,7 @@ function Projects() {
                                 
                             </ProjectsBoxContainer>
                         </ProjectsModal2>
-                        <ProjectsModal3>
+                        <ProjectsModal3 onClick={openModal}>
                             <ProjectsIconContainer>
                                 <ProjectsIcon></ProjectsIcon>
                             </ProjectsIconContainer>

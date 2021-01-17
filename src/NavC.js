@@ -8,7 +8,7 @@ export function NavC({toggle}) {
           
             <Nav>
         <NavContainer>
-          <NavLogo href="./Pages/index.js" to="Home" smooth={true} duration={500} spy={true}
+          <NavLogo  to="/"  smooth={true} duration={500} spy={true}
              exact="true" offset={-80}>MDJ</NavLogo>
           <MobileIcon  onClick={toggle}>
             <FaBars/>

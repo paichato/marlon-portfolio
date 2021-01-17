@@ -1,6 +1,6 @@
 
 import './App.css';
-import {BrowserRouter as Router} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import {React, useState} from 'react';
 import Home from './Pages';
 import About from './Pages/About';
@@ -8,6 +8,7 @@ import { NavC } from './NavC';
 import {Sidebar} from './Sidebar.js';
 import Projects from './Pages/Projects';
 import Hire from './Pages/Hire';
+
 
 
 
@@ -26,14 +27,20 @@ function App() {
     
       <div style={{background:'black'}}>
       <Router>
-      <NavC toggle={toggle} />
-      <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Home/>
-      <About/>
-      <Projects/>
-      <Hire/>
-      
+       
+          <NavC toggle={toggle} />
+          <Sidebar isOpen={isOpen} toggle={toggle} />
 
+          <Switch>
+          <Route path='/marlon-portfolio/src/Pages/index.js' exact component={Home} ></Route>
+        </Switch>
+
+          <Home/>
+          <About/>
+          <Projects/>
+          <Hire/>
+      
+      
       </Router>
       </div>
     // </div>
