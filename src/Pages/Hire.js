@@ -67,11 +67,11 @@ function Hire() {
                                     <HireCard2InputMessageLabel>Message</HireCard2InputMessageLabel>
                                     <HireCard2InputMessage 
                                     placeholder="Keep it up! Got somethimg for you"
-                                    rows="4" cols="50" name="message" id="message"/>
+                                    rows="4" cols="50" name="html_message" id="html_message"/>
                                    
                                     <HireCard2InputEmailLabel>Email</HireCard2InputEmailLabel>
                                     <HireCard2InputEmail type="email" 
-                                    placeholder="example@mail.com"name="user_email" id="user_mail"/>
+                                    placeholder="example@mail.com"name="from_email" id="from_mail"/>
 
 
                                 </HireCard2InputsContainer>
