@@ -243,7 +243,7 @@ align-items:center;
 font-family: 'Encode Sans Expanded';
 font-weight: bold;
 /* box-shadow: 7px 5px 1px ; */
-transition: all 0.2s ease-in-out;
+transition: all 0.1s ease-in-out;
 
 
 &:hover{

@@ -1,6 +1,6 @@
 
 import {React, useState} from 'react';
-import bg2 from '../images/bg3.png'; 
+import bg2 from '../images/bg-new-2.svg'; 
 import {HeroContainer, HeroBg, HeroBgImage} from '../Components/HeroSectionElements.js'
 // import { Button } from '../Components/ButtonElement';
 import {AboutContainer, IconsContainer, IconX, Description, Button, ButtonWrapper, IconX2, IconX3, IconX4} from '../Components/AboutElements';
