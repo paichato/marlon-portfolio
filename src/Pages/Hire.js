@@ -28,9 +28,14 @@ function Hire() {
                         <HireCard1C>
                             <HireCard1CLabel>Download, follow, add</HireCard1CLabel>
                             <HireCard1IconContainer>
+                                <a href="/" target="_blank"></a>
                                 <HireIcon1/>
+                                <a href="https://www.linkedin.com/in/marlon-d-jesus-6874271ab/" target="_blank">
                                 <HireIcon2 to="https://www.linkedin.com/in/marlon-d-jesus-6874271ab/" href="https://www.linkedin.com/in/marlon-d-jesus-6874271ab/"/>
+                                </a>
+                                <a href="https://github.com/paichato" target="_blank">
                                 <HireIcon3/>
+                                </a>
                             </HireCard1IconContainer>
                         </HireCard1C>
                      </HireCard1>

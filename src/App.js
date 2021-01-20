@@ -32,7 +32,12 @@ function App() {
           <Sidebar isOpen={isOpen} toggle={toggle} />
 
           <Switch>
-          <Route path='/marlon-portfolio/src/Pages/index.js' exact component={Home} ></Route>
+          <Route path="/" exact render={(props)=><Home/>}/>
+          {/* <Route path="/About" render={(props)=><About/>}/> */}
+          {/* <Route path="/About" to={About}/>
+          <Route path="/Projects" render={(props)=><Projects/>}/>
+          <Route path="/Hire" render={(props)=><Hire/>}/> */}
+          {/* <Route path='/marlon-portfolio/src/Pages/index.js' exact component={Home} ></Route> */}
         </Switch>
 
           <Home/>

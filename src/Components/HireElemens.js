@@ -65,6 +65,10 @@ margin-top: 50px;
 width:200px;
 color:#d49496;
 
+a{
+    color:#d49496;
+}
+
 `
 
 export const HireIcon1=styled(HiOutlineDocumentDownload)`
