@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/marlon-portfolio/static/css/main.ca6ace6e.chunk.css",
-    "main.js": "/marlon-portfolio/static/js/main.84b402e3.chunk.js",
-    "main.js.map": "/marlon-portfolio/static/js/main.84b402e3.chunk.js.map",
+    "main.js": "/marlon-portfolio/static/js/main.862302cf.chunk.js",
+    "main.js.map": "/marlon-portfolio/static/js/main.862302cf.chunk.js.map",
     "runtime-main.js": "/marlon-portfolio/static/js/runtime-main.fbd0a305.js",
     "runtime-main.js.map": "/marlon-portfolio/static/js/runtime-main.fbd0a305.js.map",
-    "static/js/2.21921c27.chunk.js": "/marlon-portfolio/static/js/2.21921c27.chunk.js",
-    "static/js/2.21921c27.chunk.js.map": "/marlon-portfolio/static/js/2.21921c27.chunk.js.map",
+    "static/js/2.df639017.chunk.js": "/marlon-portfolio/static/js/2.df639017.chunk.js",
+    "static/js/2.df639017.chunk.js.map": "/marlon-portfolio/static/js/2.df639017.chunk.js.map",
     "index.html": "/marlon-portfolio/index.html",
     "static/css/main.ca6ace6e.chunk.css.map": "/marlon-portfolio/static/css/main.ca6ace6e.chunk.css.map",
-    "static/js/2.21921c27.chunk.js.LICENSE.txt": "/marlon-portfolio/static/js/2.21921c27.chunk.js.LICENSE.txt",
+    "static/js/2.df639017.chunk.js.LICENSE.txt": "/marlon-portfolio/static/js/2.df639017.chunk.js.LICENSE.txt",
     "static/media/Background-3-last.7e4c40b5.png": "/marlon-portfolio/static/media/Background-3-last.7e4c40b5.png",
     "static/media/Background-4.234578c5.png": "/marlon-portfolio/static/media/Background-4.234578c5.png",
     "static/media/Bg-new-1.99c260a4.svg": "/marlon-portfolio/static/media/Bg-new-1.99c260a4.svg",
@@ -17,8 +17,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.fbd0a305.js",
-    "static/js/2.21921c27.chunk.js",
+    "static/js/2.df639017.chunk.js",
     "static/css/main.ca6ace6e.chunk.css",
-    "static/js/main.84b402e3.chunk.js"
+    "static/js/main.862302cf.chunk.js"
   ]
 }
