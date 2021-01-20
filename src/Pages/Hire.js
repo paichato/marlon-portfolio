@@ -10,25 +10,31 @@ import { HireCard1, HireCard1C, HireCard1CLabel, HireCard1IconContainer,
       HireCard3InputsContainer,HireCard3Label,HireCard3SendButton, HireCard12, HireRadioGroup } from '../Components/HireElemens';
 import bg4 from '../images/Background-4.png';
 import * as emailjs from 'emailjs-com';
-
+import useModal from 'react-hooks-use-modal';
 
 
 
 
 function Hire() {
 
+    // const [Modal, open,close,isOpen]=useModal('root',{preventScroll:true})
+
     function sendEmail(e) {
 
-        emailjs.init('user_yoMvX7CLWqOm51wGcyqte');
+        // emailjs.init('user_yoMvX7CLWqOm51wGcyqte');
         e.preventDefault();
             
        emailjs.sendForm('service_5njbg6m', 'template_cjwpmoi', e.target, 
         'user_yoMvX7CLWqOm51wGcyqte')
           .then((result) => {
               console.log(result.text);
-              window.location.reload();
+              window.alert("mail sent!");
+
+              //To reload page
+            //   window.location.reload();
           }, (error) => {
               console.log(error.text);
+              window.alert('Something went wrong!');
           });
             e.target.reset();
         
@@ -71,12 +77,12 @@ function Hire() {
                                    
                                     <HireCard2InputEmailLabel>Email</HireCard2InputEmailLabel>
                                     <HireCard2InputEmail type="email" 
-                                    placeholder="example@mail.com"name="from_email" id="from_mail"/>
+                                    placeholder="example@mail.com"name="from_mail" id="from_mail"/>
 
 
                                 </HireCard2InputsContainer>
                                 <HireCard2ButtonContainer>
-                                    <HireCard2SendButton id="button" type="submit" form="contact-form">Send</HireCard2SendButton>
+                                    <HireCard2SendButton id="button"  type="submit" form="contact-form">Send</HireCard2SendButton>
 
                                 </HireCard2ButtonContainer>
                                 </form>
