@@ -9,13 +9,32 @@ import { HireCard1, HireCard1C, HireCard1CLabel, HireCard1IconContainer,
      HireCard3InputEmailLabel,HireCard3InputMessage, HireCard3InputMessageLabel,
       HireCard3InputsContainer,HireCard3Label,HireCard3SendButton, HireCard12, HireRadioGroup } from '../Components/HireElemens';
 import bg4 from '../images/Background-4.png';
-import {Radio} from 'antd';
+import * as emailjs from 'emailjs-com';
 
 
 
 
 
 function Hire() {
+
+    function sendEmail(e) {
+
+        emailjs.init('user_yoMvX7CLWqOm51wGcyqte');
+        e.preventDefault();
+            
+       emailjs.sendForm('service_5njbg6m', 'template_cjwpmoi', e.target, 
+        'user_yoMvX7CLWqOm51wGcyqte')
+          .then((result) => {
+              console.log(result.text);
+              window.location.reload();
+          }, (error) => {
+              console.log(error.text);
+          });
+            e.target.reset();
+        
+        }
+
+
     return (
         <div id="Hire">
             <HeroContainer   smooth={true} duration={500} spy={true}
@@ -28,12 +47,12 @@ function Hire() {
                         <HireCard1C>
                             <HireCard1CLabel>Download, follow, add</HireCard1CLabel>
                             <HireCard1IconContainer>
-                                <a href="/" target="_blank"></a>
+                                <a href="/" rel="noreferrer" target="_blank"></a>
                                 <HireIcon1/>
-                                <a href="https://www.linkedin.com/in/marlon-d-jesus-6874271ab/" target="_blank">
+                                <a href="https://www.linkedin.com/in/marlon-d-jesus-6874271ab/" rel="noreferrer" target="_blank">
                                 <HireIcon2 to="https://www.linkedin.com/in/marlon-d-jesus-6874271ab/" href="https://www.linkedin.com/in/marlon-d-jesus-6874271ab/"/>
                                 </a>
-                                <a href="https://github.com/paichato" target="_blank">
+                                <a href="https://github.com/paichato" rel="noreferrer" target="_blank">
                                 <HireIcon3/>
                                 </a>
                             </HireCard1IconContainer>
@@ -42,23 +61,25 @@ function Hire() {
                      <HireCard12>
                         <HireCard2>
                             <HireCard2C>
+                                <form className="contact-form" name="contact-form" id="contact-form" onSubmit={sendEmail}>
                                 <HireCard2Label>Send a mail</HireCard2Label>
                                 <HireCard2InputsContainer>
                                     <HireCard2InputMessageLabel>Message</HireCard2InputMessageLabel>
                                     <HireCard2InputMessage 
                                     placeholder="Keep it up! Got somethimg for you"
-                                    rows="4" cols="50"/>
+                                    rows="4" cols="50" name="message" id="message"/>
                                    
                                     <HireCard2InputEmailLabel>Email</HireCard2InputEmailLabel>
                                     <HireCard2InputEmail type="email" 
-                                    placeholder="example@mail.com"/>
+                                    placeholder="example@mail.com"name="user_email" id="user_mail"/>
 
 
                                 </HireCard2InputsContainer>
                                 <HireCard2ButtonContainer>
-                                    <HireCard2SendButton>Send</HireCard2SendButton>
+                                    <HireCard2SendButton id="button" type="submit" form="contact-form">Send</HireCard2SendButton>
 
                                 </HireCard2ButtonContainer>
+                                </form>
                             </HireCard2C>
                         </HireCard2>
                         <HireCard3>
