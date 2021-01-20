@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { Button, Button2, CodeIcon, CodeIconContainer, MiniText, Text } from '../Components/ButtonElement';
-import { HeroBtnContainer, ArrowForward, ArrowRight } from '../Components/HeroSectionElements';
+import { HeroBtnContainer, ArrowForward, ArrowRight, IndexContainer } from '../Components/HeroSectionElements';
 import HeroSection from '../HeroSection';
 
 import {Sidebar} from '../Sidebar';
@@ -24,7 +24,7 @@ function Home() {
         <div >
            
             <Sidebar isOpen={isOpen} toggle={toggle} />
-            
+            <IndexContainer>
             <Button to='About' onMouseEnter={onHover} onMouseLeave={onHover} 
             smooth={true} duration={500} spy={true}
              exact="true" offset={-80}>see more
@@ -39,6 +39,7 @@ function Home() {
                
                 <Text>Marlon<br/> D'Jesus</Text>
                 <MiniText>Software Dev | Front-End | Back-end</MiniText>
+                </IndexContainer>
             <HeroSection id="Home">
                 {/* <HeroBtnContainer>
                 <Button to='Projects' onMouseEnter={onHover} onMouseLeave={onHover}>see projects 

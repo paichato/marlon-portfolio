@@ -61,3 +61,9 @@ font-size: 20px;
 export const ArrowRight=styled(MdKeyboardArrowRight)`
 
 `
+
+export const IndexContainer=styled.div`
+margin-left:70px;
+
+
+`
