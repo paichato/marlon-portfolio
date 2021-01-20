@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA,EACE,gBAAiB,CACjB,qBAAsB,CACtB,QAAS,CACT,SAAU,CACV,sDACF","file":"main.ca6ace6e.chunk.css","sourcesContent":["*{\n  background: 22222;\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n  font-family:'Encode Sans Expanded','Roboto', sans-serif, 'Encode Sans Expanded';\n}"]}
