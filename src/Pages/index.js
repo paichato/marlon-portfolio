@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { Button, Button2, CodeIcon, CodeIconContainer, MiniText, Text } from '../Components/ButtonElement';
-import { HeroBtnContainer, ArrowForward, ArrowRight, IndexContainer } from '../Components/HeroSectionElements';
+import { HeroBtnContainer, ArrowForward, ArrowRight, IndexContainer, GoUp } from '../Components/HeroSectionElements';
 import HeroSection from '../HeroSection';
 
 import {Sidebar} from '../Sidebar';
@@ -18,7 +18,14 @@ function Home() {
         setIsOpen(!isOpen);
     }
   
-
+    // tryin
+    // const [goUp, setGoUp]=useState(0);
+    // const goingUp=()=>{
+    //     if(window.of !==goUp){
+    //         <GoUp></GoUp>
+    //     }
+    //     window.onload(goingUp);
+    // }
     
     return (
         <div >

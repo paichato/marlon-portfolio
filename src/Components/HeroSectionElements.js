@@ -1,6 +1,7 @@
 import styled, {keyframes} from 'styled-components';
 import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md';
 import {flash} from 'react-animations';
+import {FaArrowCircleUp} from 'react-icons/fa';
 
 
 const flashAnimation= keyframes`${flash}`;
@@ -66,4 +67,18 @@ export const IndexContainer=styled.div`
 margin-left:70px;
 
 
+`
+export const GoUp=styled(FaArrowCircleUp)`
+position: sticky;
+z-index:4;
+width:80px;
+height:80px;
+transition: all 0.2s ease-in-out;
+background:red;
+color: white;
+
+&:hover{
+    cursor: pointer;
+    transform: scale(1.1,1.1);
+}
 `
