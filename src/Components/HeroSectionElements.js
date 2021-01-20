@@ -6,8 +6,9 @@ import {flash} from 'react-animations';
 const flashAnimation= keyframes`${flash}`;
 
 export const HeroContainer=styled.div`
-background: yellow;
-
+background: 222222;
+border:none;
+outline:none;
 display:flex;
 justify-content:center;
 align-items:center;
@@ -15,6 +16,7 @@ padding: 0 30px;
 height:880px;
 position: relative;
 z-index: 1;
+
 /* animation: 5s ${flashAnimation};
 animation-delay:3s; */
 `
@@ -35,7 +37,7 @@ width:100%;
 height: 100%;
 -o-object-fit: cover;
 object-fit:cover;
-background: red;
+background: 222222;
 border:none;
 
 
