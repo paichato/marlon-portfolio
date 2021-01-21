@@ -53,7 +53,7 @@ function Hire() {
                         <HireCard1C>
                             <HireCard1CLabel>Download, follow, add</HireCard1CLabel>
                             <HireCard1IconContainer>
-                                <a href="/" rel="noreferrer" target="_blank"></a>
+                                <a href="https://github.com/paichato/resume/blob/main/README.md" rel="noreferrer" target="_blank"></a>
                                 <HireIcon1/>
                                 <a href="https://www.linkedin.com/in/marlon-d-jesus-6874271ab/" rel="noreferrer" target="_blank">
                                 <HireIcon2 to="https://www.linkedin.com/in/marlon-d-jesus-6874271ab/" href="https://www.linkedin.com/in/marlon-d-jesus-6874271ab/"/>
