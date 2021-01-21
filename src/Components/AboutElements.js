@@ -18,7 +18,8 @@ flex-direction:column;
 justify-content:space-between;
 align-items:center;
 width:400px;
-margin-right:350px;
+//I have changed from 350px margin-right
+margin-right:580px;
 margin-top: 10px;
 color: white;
 transition: all 0.2s ease-in-out;
